@@ -9,7 +9,7 @@ window.onload= function(){
     let totalLevel =20;
     let countText = document.querySelector(".count-text");
     let randomGeneratedPattern;
-    const patterns =[0,1,1,2,3,2,4,1,0];
+    const patterns =[0,1,1,2,3,2,4,1,0,1,2,3,3,1,0,2,3,1,2,2];
     
     document.querySelector(".start").addEventListener("click",function(){
         if(gameStateOn){
