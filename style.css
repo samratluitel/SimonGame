@@ -1,0 +1,201 @@
+body{
+    background-color: darkgrey;
+    margin:0;
+    padding: 0;
+    font-family: Tahoma,sans-serif;
+}
+.container{
+    margin:0 auto;
+    text-align: center;
+}
+.simonBoard{
+    margin: 0 auto;
+    border: 20px solid #333333;
+    margin-top:50px;
+    border-radius: 450px;
+    width:450px;
+    height: 450px;
+}
+.pad{
+    margin: 0;
+    float:left;
+    position: relative;
+    width:219px;
+    height: 219px;
+    border: 3px solid #333333;
+}
+.green{
+    border-radius: 218px 0px 0px 0px;
+    background-color: #00A74A;
+}
+.red{
+    border-radius:0px 218px 0px 0px;
+    background-color: #9F0F17;
+}
+.yellow{
+    border-radius:0px 0px 0px 218px;
+    background-color: #CCA707;
+}
+.blue{
+    border-radius: 0px 0px 218px 0px;
+    background-color: #094A8F;
+}
+.controls{
+    width:200px;
+    height: 200px;
+    background-color: #ECE7EE;
+    position: absolute;
+    border-radius: 50%;
+    border:10px solid #333333;
+    left:575px;
+    top:180px;
+}
+#header{
+    color:#222222;
+    font-weight: 700;
+    font-size: 45px;
+    padding-top: 20px;
+    user-select: none;
+}
+.button-holder{
+    display: flex;
+    margin-top: 15px;
+    padding-left:15px;
+    padding-right: 15px;
+}
+.count{
+    margin-top:2px;
+    color:#B60B29;
+    width: 50px;
+    height: 35px;
+    border: 2px solid black;
+    background-color: #32050C;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.count-text{
+    width:50px;
+    height:30px;
+    margin-top:3px;
+    margin-left:-4px;
+    font-size:21px;
+}
+.count:after{
+    content:"Count";
+    color:black;
+    position: relative;
+    font-size:13px;
+}
+.start{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #444444;
+    margin-left:20px;
+    margin-top:8px;
+    background-color: #FC0102;
+    box-shadow:0px 2px 3px black;
+    position: relative;
+}
+.start:active{
+    box-shadow:0px 0px 3px black;
+    top:2px;
+}
+.start:after{
+    content:"Start";
+    position: absolute;
+    top:28px;
+    font-size:13px;
+    left:-4px;
+}
+.start:active:after{
+    top:26px;
+}
+.strict{
+    margin-left: 27px;
+}
+.strict--glowArea{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border:2px solid #32050c;
+    background-color: #32050c;
+    margin-top: -10px;
+}
+.strict--button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #444444;
+    margin-left:-8px;
+    margin-top:5px;
+    background-color: #FFFF00;
+    box-shadow:0px 2px 3px black;
+    position: relative;
+}
+.strict--button::after{
+    content:"Strict";
+    position: absolute;
+    top:29px;
+    font-size:13px;
+    left:-4px;
+}
+.strict--button:active{
+    box-shadow:0px 0px 3px black;
+    top:2px;
+}
+.strict--button:active:after{
+    top:27px;
+}
+.gameStateButton{
+    margin-left:80px;
+    margin-top: 30px;
+}
+.gameStateButton--outer{
+
+    width:45px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #333333;
+    position: relative;
+}
+.gameStateButton--inner{
+    position: absolute;
+    top:2px;
+    left:2px;
+    width: 20px;
+    height: 20px;
+    background-color: #3193DE;
+    border-radius: 3px;
+}
+.gameStateButton--outer:before{
+    content:"Off";
+    position: relative;
+    top:2px;
+    left:-25px;
+    font-size:13px;
+}
+.gameStateButton--outer:after{
+    content:"On";
+    position: relative;
+    top:2px;
+    left:25px;
+    font-size:13px;
+}
+.right{ /* for gameStateButton--inner */
+    left:22px;
+}
+
+/* Animation section of color green red yellow dark-green*/
+.green-animated{
+    background-color: rgb(7, 247, 115);
+}
+.red-animated{
+    background-color: rgb(248, 16, 27);
+}
+.yellow-animated{
+    background-color: rgb(255, 212, 21);
+}
+.blue-animated{
+    background-color: rgb(22, 133, 252);
+}
