@@ -47,7 +47,7 @@ body{
     position: absolute;
     border-radius: 50%;
     border:10px solid #333333;
-    left:575px;
+    left:42%;
     top:180px;
 }
 #header{
@@ -198,4 +198,16 @@ body{
 }
 .blue-animated{
     background-color: rgb(22, 133, 252);
+}
+
+@media screen and (max-width:1112px){
+    .controls{
+        left:40%;
+    }
+}
+
+@media screen and (max-width:996px){
+    .controls{
+        left:38%;
+    }
 }
